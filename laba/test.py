@@ -100,23 +100,23 @@ class VectorTest(unittest.TestCase):
         self.assertEqual(expected, obtained)          
 
 
-    def test1_vector_vectornoe(self):
+    def test1_cross_product(self):
         expected = main.Vector(-32, 16, 0)
-        obtained = main.Vector(2,4,10).vectornoe(main.Vector(4,8,12))
+        obtained = main.Vector(2,4,10).cross_product(main.Vector(4,8,12))
         self.assertEqual(expected.getx, obtained.getx)
         self.assertEqual(expected.gety, obtained.gety)
         self.assertEqual(expected.getz, obtained.getz)
 
-    def test2_vector_vectornoe(self):
+    def test2_cross_product(self):
         expected = main.Vector(-2902, -634, 444)
-        obtained = main.Vector(22,-100,1).vectornoe(main.Vector(4,2,29))
+        obtained = main.Vector(22,-100,1).cross_product(main.Vector(4,2,29))
         self.assertEqual(expected.getx, obtained.getx)
         self.assertEqual(expected.gety, obtained.gety)
         self.assertEqual(expected.getz, obtained.getz)    
 
-    def test3_vector_vectornoe(self):
+    def test3_cross_product(self):
         expected = main.Vector(0, 0, 0)
-        obtained = main.Vector(0,0,0).vectornoe(main.Vector(0,0,0))
+        obtained = main.Vector(0,0,0).cross_product(main.Vector(0,0,0))
         self.assertEqual(expected.getx, obtained.getx)
         self.assertEqual(expected.gety, obtained.gety)
         self.assertEqual(expected.getz, obtained.getz)   
